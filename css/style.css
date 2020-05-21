@@ -514,52 +514,245 @@ body {
   line-height: 1.2;
   color: #102746;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* header styles strar */
+.wrapper-full {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
 }
 
 .header {
-   position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
-.header__wrapper{
+
+.header__wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 56px;
 }
-.header__list{
+
+.header__list {
   display: flex;
   flex-wrap: wrap;
 }
-.header__item{
+
+.header__item {
   margin-right: 82px;
 }
-.header__item:last-child{
+
+.header__item:last-child {
   margin-right: 0px;
 }
-.header__link{
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-color: #FFFFFF;
-text-decoration: none;
+
+.header__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
-.header__link:focus, .header__link:hover, .header__link:active {
-opacity: 0.75;
+
+.header__link:focus,
+.header__link:hover,
+.header__link:active {
+  opacity: 0.75;
 }
+
 /* header styles end */
 
 /* intro styles strar */
-.intro{
-  height: 100vh;
+.intro {
+  min-height: 100vh;
   background: url(../img/intro-bg.png) no-repeat center;
   background-size: cover;
+  padding-top: 263px;
 }
+
+.intro___title {
+  max-width: 619px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 22px;
+}
+
+.intro_subtitle {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form__field {
+  background: transparent url(../img/oval.svg) no-repeat left 7px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 60px;
+  width: 297px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.search-form__field::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.search-form__submit {
+  padding: 15px 39px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  text-transform: uppercase;
+  background: #1B7DFF;
+  border: 0;
+}
+
+.search-form__submit:focus,
+.search-form__submit:active,
+.search-form__submit:hover {
+  background: rgb(9, 42, 85);
+  ;
+}
+
 /* intro styles end */
+
+
+/* Benefits  styles старт */
+.benefits__wrap {
+  max-width: 1262px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+
+.benefits__title {
+  width: 1062px;
+  font-weight: 500;
+  color: #102746;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: white;
+
+}
+
+.benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits__card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benefits__card-pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+
+.benefits__card-img {
+  display: block;
+}
+
+.benefits__card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits__card_description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.benefits__card-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/Shape.svg) no-repeat right center;
+}
+
+.places__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.places__title::after{
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+  bottom: 0;
+  left: 0;
+
+}
+.places__cards{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.places__card_size_lg{
+  grid-column: span 3;
+}
+.places__card-pic{
+  height: 354px;
+  object-fit: cover;
+}
+.places__card{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(21, 24, 36, 0.4);
+}
+/* Benefits  styles end */
