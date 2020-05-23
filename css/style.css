@@ -676,11 +676,13 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 55px;
   padding: 0 100px;
+  margin-bottom: 131px;
 }
 
 .benefits__card {
   grid-column: span 1;
   margin-bottom: 112px;
+  
 }
 
 .benefits__card-pic {
@@ -720,7 +722,7 @@ img {
   font-size: 35px;
   line-height: 42px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .places__title::after{
   display: block;
@@ -772,6 +774,9 @@ transform: scale(1.05);
 }
 .places__card_size_sm{
   grid-column: span 2;
+}
+.places{
+  margin-bottom: 131px;
 }
 /* as */
 /* Benefits  styles end */
