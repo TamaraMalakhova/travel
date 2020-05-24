@@ -930,4 +930,29 @@ img {
   background: rgb(9, 42, 85);
 }
 
-/* top visit end */
+/* top visit styles end */
+
+
+/* Video styles start */
+.video{
+  width: 100%;
+}
+.video__wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video__item{
+  padding-top: 56.2%;
+}
+
+.video__element{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+
+}
+/* Video styles end */
