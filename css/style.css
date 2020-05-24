@@ -836,7 +836,91 @@ img {
 }
 
 /* top visit start */
+.top {
+  margin-bottom: 86px;
+}
 
+.title__top {
+  margin-bottom: 54px;
+}
 
+.top__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.top__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+
+.top__card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.top__card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 16px 25px;
+}
+
+.top__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto 0 0;
+}
+
+.top__card-likes {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 20px;
+  margin-right: 14px;
+  background: url(../img/hart-icon.svg) no-repeat right;
+}
+
+.top__card-comments {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 23px;
+  background: url(../img/comment.svg) no-repeat right;
+}
+
+.top__card-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #102746;
+  margin-bottom: 31px;
+}
+
+.top__card-more {
+  padding: 12px 19px;
+  background: #006DFE;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  margin: auto 0 0 0;
+  width: 118px;
+  text-align: center;
+}
+
+.top__card-more:hover,
+.top__card-more:active,
+.top__card-more:focus {
+  background: rgb(9, 42, 85);
+}
 
 /* top visit end */
