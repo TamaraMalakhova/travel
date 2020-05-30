@@ -1219,7 +1219,7 @@ img {
   .tour-pic,
   .tour__info {
     grid-column: span 2;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .tours {
